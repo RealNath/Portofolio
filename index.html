@@ -9,9 +9,9 @@
 </head>
 <body>
     <header id="navbar">
-        <span>Home</span>
-        <span>GitHub</span>
-        <span>Projects</span>
+        <span><a href="#">Home</a></span>
+        <span><a href="https://github.com/RealNath" target="_blank">GitHub</a></span>
+        <span><a href="#projects-container">Projects</a></span>
     </header>
     <main>
         <div id="intro-container">
@@ -22,16 +22,32 @@
             </div>
             <div id="intro-pfp"></div>
         </div>
+
         <div id="projects-container">
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
-            <p>Test</p>
+            <h1>Projects</h1>
+            <div class="project">
+                <div class="project-desc">
+                    <h2><img src="image/githubicon.png" alt="GitHub Icon"><a href="https://github.com/realNath/tucil3_13523132" target="_blank">Rush Hour Solver</a></h2>
+                    <p>A Java program that solves Rush Hour puzzles with Greedy Best First Search, Uniform Cost Search, and A*</p>
+                </div>
+                <div class="project-thumbnail" id="project-thumbnail-rhs"></div>
+            </div>
+            <div class="project">
+                <div class="project-desc">
+                    <h2><img src="image/githubicon.png" alt="GitHub Icon"><a href="https://github.com/RealNath/Font-Awesome-Pro-Free" target="_blank">Font Awesome Pro Free</a></h2>
+                    <p>An automated CI/CD project that fetch the latest Pro CSS link of Font Awesome icons using API for free</p>
+                    <p><i>(Individual icon downloader’s website soon)</i></p>
+                </div>
+                <div class="project-thumbnail" id="project-thumbnail-fa"></div>
+            </div>
+            <div class="project">
+                <div class="project-desc">
+                    <h2><a href="#" onclick="return false;">BBDown GUI</a></h2>
+                    <p>A GUI downloader for bilibili videos, based on nilaoda's BBDown</p>
+                    <p><i>(Coming soon)</i></p>
+                </div>
+                <div class="project-thumbnail" id="project-thumbnail-bbd"></div>
+            </div>
         </div>
     </main>
 
