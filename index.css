@@ -146,9 +146,17 @@ a:not(:hover)::after {
 	background-image: url("./image/rushhoursolver.png");
 	aspect-ratio: 1/1;
 }
+#project-thumbnail-qic {
+	background-image: url("./image/quadtreeimgcompressor.png");
+	aspect-ratio: 1/1;
+}
 #project-thumbnail-fa {
 	background-image: url("./image/fontawesomeprothumbnail.png");
 	aspect-ratio: 16/9;
+}
+#project-thumbnail-we {
+	background-image: url("./image/wallpaperextractor.png");
+	aspect-ratio: 1/1;
 }
 #project-thumbnail-bbd {
 	background-image: url("image/bbdowngui.png");
