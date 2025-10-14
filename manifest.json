@@ -1,0 +1,17 @@
+{
+    "name": "Jonathan Levi's Portfolio",
+    "short_name": "Portofolio",
+    "theme_color": "#fff7f3",
+    "background_color": "#fff7f3",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "https://realnath.github.io/Portofolio/",
+    "description": "A portfolio for Jonathan Levi.",
+    "icons": [
+        {
+            "src": "./image/icons/portfolio.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ]
+}
