@@ -1,6 +1,7 @@
 html {
 	scroll-behavior: smooth;
 	color: black;
+	padding-bottom: 2vh;
 }
 
 body {
@@ -43,6 +44,14 @@ a:not(:hover)::after {
     padding: 10px 20px;
     z-index: 100;
 }
+#menu {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	gap: 3vw;
+	margin-top: 0;
+	margin-bottom: 0;
+}
 #navbar a {
 	position: relative;
 }
@@ -51,7 +60,7 @@ a:not(:hover)::after {
 	margin: 25vh 0;
 	height: 60vh;
 }
-#intro-container, .project {
+#intro-container {
 	display: flex;
 	justify-content: space-around;
     align-items: center;
@@ -116,7 +125,15 @@ a:not(:hover)::after {
 	display: flex;
 }
 .project {
-	max-width: 85vw;
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+    width: 65%;
+	padding: 0 5vw;
+	box-sizing: border-box;
+	gap: 20px;
+	/* max-width: 85vw; */
+	/* border: 2px dashed; */
 }
 .project-desc {
 	align-self: stretch;
@@ -150,6 +167,10 @@ a:not(:hover)::after {
 	background-image: url("./image/quadtreeimgcompressor.png");
 	aspect-ratio: 1/1;
 }
+#project-thumbnail-ai {
+	background-image: url("./image/actuallyindonesians.jpg");
+	aspect-ratio: 16/9;
+}
 #project-thumbnail-fa {
 	background-image: url("./image/fontawesomeprothumbnail.png");
 	aspect-ratio: 16/9;
@@ -163,7 +184,39 @@ a:not(:hover)::after {
 	aspect-ratio: 16/9;
 }
 
+#hamburger {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+}
+#hamburger img {
+	width: 24px;
+	height: 24px;
+}
+
 @media (max-width: 768px) {
+	#hamburger {
+		display: block;
+	}
+	#menu {
+		list-style-type: none;
+		display: none;
+		flex-direction: column;
+		align-items: end;
+		gap: 1vh;
+		position: absolute;
+		top: 100%;
+		right: 20px;
+		background-color: #ffffff;
+		padding: 15px;
+		border-radius: 10px;
+		outline: 1px solid black;
+	}
+	#menu.menu-open {
+		display: flex;
+	}
 	#intro-container {
 		flex-direction: column-reverse;
 		height: 100vh;
@@ -200,5 +253,14 @@ a:not(:hover)::after {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+}
+
+@media (max-width: 1000px) {
+	#intro-pfp {
+		height: 30vh;
+	}
+	.project {
+		width: 85%;
 	}
 }

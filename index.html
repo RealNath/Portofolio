@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#fff7f3">
     <title>Portofolio</title>
 </head>
 <body>
     <header id="navbar">
-        <span><a href="#">Home</a></span>
-        <span><a href="#projects-container">Projects</a></span>
-        <span><a href="https://github.com/RealNath" target="_blank">GitHub</a></span>
-        <span><a href="https://www.linkedin.com/in/jonathan-levi-120a07243/" target="_blank">LinkedIn</a></span>
+        <button id="hamburger"><img src="image/hamburger.svg" alt="Hamburger button"></button>
+        <ul id="menu">
+            <li><a href="#" class="menu-item">Home</a></li>
+            <li><a href="#projects-container" class="menu-item">Projects</a></li>
+            <li><a href="https://github.com/RealNath" target="_blank" class="menu-item">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/jonathan-levi-120a07243/" target="_blank" class="menu-item">LinkedIn</a></li>
+            <li><a href="https://wa.me/628196060677" target="_blank" class="menu-item">Contact me on WhatsApp</a></li>
+        </ul>
     </header>
     
     <main>
@@ -22,7 +27,7 @@
             <div id="intro">
                 <h1>Jonathan Levi</h1>
                 <h2>About Me</h2>
-                <p>I'm a passionate programmer who loves making program in Python, JavaScript, Java.</p>
+                <p>I'm a passionate programmer who loves making program in Python, JavaScript, Java. I'm interested in web development (React, Vue, Django). I'm considering cybersecurity now.</p>
             </div>
             <div id="intro-pfp"></div>
         </div>
@@ -45,27 +50,24 @@
             </div>
             <div class="project">
                 <div class="project-desc">
+                    <h2><img src="image/githubicon.png" alt="GitHub Icon"><a href="https://github.com/RealNath/Actually-Indonesians" target="_blank">Actually Indonesians</a></h2>
+                    <p>An AI automated class scheduler based on list of classes, rooms, and what subjects each student take. It uses three algorithms: Stochastic Hill Climbing, Simulated Annealing, and Genetic Algorithm.</p>
+                </div>
+                <div class="project-thumbnail" id="project-thumbnail-ai"></div>
+            </div>
+            <div class="project">
+                <div class="project-desc">
                     <h2><img src="image/githubicon.png" alt="GitHub Icon"><a href="https://github.com/RealNath/Font-Awesome-Pro-Free" target="_blank">Font Awesome Pro Free</a></h2>
                     <p>An automated CI/CD project that fetch the latest Pro CSS link of Font Awesome icons using API for free.</p>
-                    <p><i>(Individual icon downloader’s website soon)</i></p>
                 </div>
                 <div class="project-thumbnail" id="project-thumbnail-fa"></div>
             </div>
             <div class="project">
                 <div class="project-desc">
                     <h2><img src="image/githubicon.png" alt="GitHub Icon"><a href="https://github.com/RealNath/Wallpaper-Extractor" target="_blank">Wallpaper Extractor</a></h2>
-                    <p>A side-project Python + Qt framework program for obtaining the file location of the current Windows background image and extracting it.</p>
-                    <!-- <p><i>(Coming soon)</i></p> -->
+                    <p>A Python + Qt framework project I made out of boredom, for obtaining the file location of the current Windows background image and extracting it.</p>
                 </div>
                 <div class="project-thumbnail" id="project-thumbnail-we"></div>
-            </div>
-            <div class="project">
-                <div class="project-desc">
-                    <h2><a href="#" onclick="return false;">BBDown GUI</a></h2>
-                    <p>A GUI downloader for bilibili videos, based on nilaoda's BBDown.</p>
-                    <p><i>(Coming soon)</i></p>
-                </div>
-                <div class="project-thumbnail" id="project-thumbnail-bbd"></div>
             </div>
         </div>
     </main>
